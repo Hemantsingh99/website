@@ -6,6 +6,7 @@ var express = require("express");
 var app = express();
 var isGulp = process.argv[2] === "--gulp";
 
+// you can also used https instented of http.(just suggestion).
 app.use(express.static("build"));
 
 var port = 0;
